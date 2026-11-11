@@ -1,0 +1,57 @@
+name: real-data-study
+
+on:
+  push:
+    branches: [main, master]
+    paths-ignore: ["results_real/**", "**.md"]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "quick (~20 min) or full (~60 min, larger downloads)"
+        required: true
+        default: quick
+        type: choice
+        options: [quick, full]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: real-data-study
+  cancel-in-progress: true
+
+jobs:
+  study:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -e ".[real,dev]"
+      - name: Unit tests
+        run: pytest -q
+      - name: Real-data study
+        run: |
+          MODE="${{ github.event.inputs.mode || 'quick' }}"
+          if [ "$MODE" = "full" ]; then FLAG=""; else FLAG="--quick"; fi
+          python -W ignore scripts/run_real_study.py --download $FLAG --out results_real
+      - name: Keep results as a downloadable artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results_real
+          path: |
+            results_real/
+            results_real.zip
+      - name: Commit results into the repository
+        run: |
+          cp results_real.zip results_real/ 2>/dev/null || true
+          git config user.name "driftguard-bot"
+          git config user.email "driftguard-bot@users.noreply.github.com"
+          git add results_real
+          git commit -m "Real-data study results [skip ci]" || echo "nothing to commit"
+          git pull --rebase
+          git push
