@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driftguard"
+version = "0.1.0"
+description = "Schema-drift-tolerant ingestion with cause-attributing data-quality checks, benchmarked on NYC taxi data"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Harshita Pandita"}]
+dependencies = ["pandas>=2.1", "numpy>=1.26", "scipy>=1.11", "scikit-learn>=1.4", "pyyaml>=6"]
+
+[project.optional-dependencies]
+real = ["pyarrow>=14", "duckdb>=1.0"]
+geo = ["geopandas>=0.14"]   # only for pre-2016 coordinate files
+dev = ["pytest>=8"]
+
+[project.scripts]
+driftguard = "driftguard.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["driftguard*"]
+
+[tool.setuptools.package-data]
+"driftguard.config" = ["*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::RuntimeWarning"]

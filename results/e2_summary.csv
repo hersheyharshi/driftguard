@@ -1,0 +1,13 @@
+fault,n,detected,cause_ok,held_or_rejected,auto_repaired,map_correct,repair_ks
+cents,10,1.0,1.0,0.0,1.0,,0.00017950098725538766
+clock_shift,10,1.0,1.0,0.0,1.0,,0.0
+column_swap,10,1.0,1.0,0.0,1.0,,0.00016518004625043492
+dropped_column,10,1.0,1.0,0.0,0.0,,
+duplicate_batch,10,1.0,1.0,1.0,0.0,,
+header_synonyms,10,,,0.0,0.0,1.0,
+null_burst,10,1.0,1.0,0.0,0.0,,
+obfuscated_headers,10,,,0.7,0.0,1.0,
+partial_duplicates,10,1.0,1.0,0.0,1.0,,0.00015151515151512474
+subtle_scale,10,1.0,1.0,0.0,0.0,,
+type_corruption,10,1.0,1.0,0.0,0.0,,
+unit_km,10,1.0,1.0,0.0,1.0,,0.006070287539936103

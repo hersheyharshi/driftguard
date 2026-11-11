@@ -1,0 +1,10 @@
+pandas>=2.1
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+pyyaml>=6
+pytest>=8
+# for real TLC data:
+pyarrow>=14
+duckdb>=1.0
+# geopandas>=0.14   # only for pre-2016 files (coordinates -> zones)

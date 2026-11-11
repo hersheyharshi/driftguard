@@ -1,0 +1,241 @@
+seed,era,headers,evidence,n_cols,correct,wrong,silent_wrong,unmapped,flagged
+0,2009,named headers,name only,18,18,0,0,0,0
+0,2009,named headers,stats only,18,18,0,0,0,8
+0,2009,named headers,name + stats,18,18,0,0,0,0
+0,2009,named headers,name + stats + invariants,18,18,0,0,0,0
+0,2009,meaningless headers,name only,18,0,0,0,18,0
+0,2009,meaningless headers,stats only,18,18,0,0,0,8
+0,2009,meaningless headers,name + stats,18,18,0,0,0,8
+0,2009,meaningless headers,name + stats + invariants,18,18,0,0,0,6
+0,2010,named headers,name only,18,18,0,0,0,0
+0,2010,named headers,stats only,18,18,0,0,0,8
+0,2010,named headers,name + stats,18,18,0,0,0,0
+0,2010,named headers,name + stats + invariants,18,18,0,0,0,0
+0,2010,meaningless headers,name only,18,0,0,0,18,0
+0,2010,meaningless headers,stats only,18,18,0,0,0,8
+0,2010,meaningless headers,name + stats,18,18,0,0,0,8
+0,2010,meaningless headers,name + stats + invariants,18,18,0,0,0,6
+0,2015,named headers,name only,19,19,0,0,0,0
+0,2015,named headers,stats only,19,18,0,0,1,8
+0,2015,named headers,name + stats,19,19,0,0,0,0
+0,2015,named headers,name + stats + invariants,19,19,0,0,0,0
+0,2015,meaningless headers,name only,19,0,0,0,19,0
+0,2015,meaningless headers,stats only,19,18,0,0,1,8
+0,2015,meaningless headers,name + stats,19,18,0,0,1,8
+0,2015,meaningless headers,name + stats + invariants,19,18,0,0,1,8
+0,2017,named headers,name only,17,17,0,0,0,0
+0,2017,named headers,stats only,17,16,0,0,1,2
+0,2017,named headers,name + stats,17,17,0,0,0,0
+0,2017,named headers,name + stats + invariants,17,17,0,0,0,0
+0,2017,meaningless headers,name only,17,0,0,0,17,0
+0,2017,meaningless headers,stats only,17,16,0,0,1,2
+0,2017,meaningless headers,name + stats,17,16,0,0,1,2
+0,2017,meaningless headers,name + stats + invariants,17,16,0,0,1,2
+0,2019,named headers,name only,18,18,0,0,0,0
+0,2019,named headers,stats only,18,17,0,0,1,2
+0,2019,named headers,name + stats,18,18,0,0,0,0
+0,2019,named headers,name + stats + invariants,18,18,0,0,0,0
+0,2019,meaningless headers,name only,18,0,0,0,18,0
+0,2019,meaningless headers,stats only,18,17,0,0,1,2
+0,2019,meaningless headers,name + stats,18,17,0,0,1,2
+0,2019,meaningless headers,name + stats + invariants,18,17,0,0,1,2
+0,2023,named headers,name only,19,19,0,0,0,0
+0,2023,named headers,stats only,19,19,0,0,0,0
+0,2023,named headers,name + stats,19,19,0,0,0,0
+0,2023,named headers,name + stats + invariants,19,19,0,0,0,0
+0,2023,meaningless headers,name only,19,0,0,0,19,0
+0,2023,meaningless headers,stats only,19,19,0,0,0,0
+0,2023,meaningless headers,name + stats,19,19,0,0,0,0
+0,2023,meaningless headers,name + stats + invariants,19,19,0,0,0,0
+1,2009,named headers,name only,18,18,0,0,0,0
+1,2009,named headers,stats only,18,18,0,0,0,6
+1,2009,named headers,name + stats,18,18,0,0,0,0
+1,2009,named headers,name + stats + invariants,18,18,0,0,0,0
+1,2009,meaningless headers,name only,18,0,0,0,18,0
+1,2009,meaningless headers,stats only,18,18,0,0,0,6
+1,2009,meaningless headers,name + stats,18,18,0,0,0,6
+1,2009,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+1,2010,named headers,name only,18,18,0,0,0,0
+1,2010,named headers,stats only,18,18,0,0,0,10
+1,2010,named headers,name + stats,18,18,0,0,0,0
+1,2010,named headers,name + stats + invariants,18,18,0,0,0,0
+1,2010,meaningless headers,name only,18,0,0,0,18,0
+1,2010,meaningless headers,stats only,18,18,0,0,0,10
+1,2010,meaningless headers,name + stats,18,18,0,0,0,10
+1,2010,meaningless headers,name + stats + invariants,18,18,0,0,0,6
+1,2015,named headers,name only,19,19,0,0,0,0
+1,2015,named headers,stats only,19,18,0,0,1,6
+1,2015,named headers,name + stats,19,19,0,0,0,0
+1,2015,named headers,name + stats + invariants,19,19,0,0,0,0
+1,2015,meaningless headers,name only,19,0,0,0,19,0
+1,2015,meaningless headers,stats only,19,18,0,0,1,6
+1,2015,meaningless headers,name + stats,19,18,0,0,1,6
+1,2015,meaningless headers,name + stats + invariants,19,18,0,0,1,4
+1,2017,named headers,name only,17,17,0,0,0,0
+1,2017,named headers,stats only,17,16,0,0,1,2
+1,2017,named headers,name + stats,17,17,0,0,0,0
+1,2017,named headers,name + stats + invariants,17,17,0,0,0,0
+1,2017,meaningless headers,name only,17,0,0,0,17,0
+1,2017,meaningless headers,stats only,17,16,0,0,1,2
+1,2017,meaningless headers,name + stats,17,16,0,0,1,2
+1,2017,meaningless headers,name + stats + invariants,17,16,0,0,1,0
+1,2019,named headers,name only,18,18,0,0,0,0
+1,2019,named headers,stats only,18,17,0,0,1,2
+1,2019,named headers,name + stats,18,18,0,0,0,0
+1,2019,named headers,name + stats + invariants,18,18,0,0,0,0
+1,2019,meaningless headers,name only,18,0,0,0,18,0
+1,2019,meaningless headers,stats only,18,17,0,0,1,2
+1,2019,meaningless headers,name + stats,18,17,0,0,1,2
+1,2019,meaningless headers,name + stats + invariants,18,17,0,0,1,0
+1,2023,named headers,name only,19,19,0,0,0,0
+1,2023,named headers,stats only,19,19,0,0,0,4
+1,2023,named headers,name + stats,19,19,0,0,0,0
+1,2023,named headers,name + stats + invariants,19,19,0,0,0,0
+1,2023,meaningless headers,name only,19,0,0,0,19,0
+1,2023,meaningless headers,stats only,19,19,0,0,0,4
+1,2023,meaningless headers,name + stats,19,19,0,0,0,4
+1,2023,meaningless headers,name + stats + invariants,19,19,0,0,0,2
+2,2009,named headers,name only,18,18,0,0,0,0
+2,2009,named headers,stats only,18,18,0,0,0,6
+2,2009,named headers,name + stats,18,18,0,0,0,0
+2,2009,named headers,name + stats + invariants,18,18,0,0,0,0
+2,2009,meaningless headers,name only,18,0,0,0,18,0
+2,2009,meaningless headers,stats only,18,18,0,0,0,6
+2,2009,meaningless headers,name + stats,18,18,0,0,0,6
+2,2009,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+2,2010,named headers,name only,18,18,0,0,0,0
+2,2010,named headers,stats only,18,18,0,0,0,6
+2,2010,named headers,name + stats,18,18,0,0,0,0
+2,2010,named headers,name + stats + invariants,18,18,0,0,0,0
+2,2010,meaningless headers,name only,18,0,0,0,18,0
+2,2010,meaningless headers,stats only,18,18,0,0,0,6
+2,2010,meaningless headers,name + stats,18,18,0,0,0,6
+2,2010,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+2,2015,named headers,name only,19,19,0,0,0,0
+2,2015,named headers,stats only,19,18,0,0,1,6
+2,2015,named headers,name + stats,19,19,0,0,0,0
+2,2015,named headers,name + stats + invariants,19,19,0,0,0,0
+2,2015,meaningless headers,name only,19,0,0,0,19,0
+2,2015,meaningless headers,stats only,19,18,0,0,1,6
+2,2015,meaningless headers,name + stats,19,18,0,0,1,6
+2,2015,meaningless headers,name + stats + invariants,19,18,0,0,1,4
+2,2017,named headers,name only,17,17,0,0,0,0
+2,2017,named headers,stats only,17,16,0,0,1,2
+2,2017,named headers,name + stats,17,17,0,0,0,0
+2,2017,named headers,name + stats + invariants,17,17,0,0,0,0
+2,2017,meaningless headers,name only,17,0,0,0,17,0
+2,2017,meaningless headers,stats only,17,16,0,0,1,2
+2,2017,meaningless headers,name + stats,17,16,0,0,1,2
+2,2017,meaningless headers,name + stats + invariants,17,16,0,0,1,0
+2,2019,named headers,name only,18,18,0,0,0,0
+2,2019,named headers,stats only,18,17,0,0,1,2
+2,2019,named headers,name + stats,18,18,0,0,0,0
+2,2019,named headers,name + stats + invariants,18,18,0,0,0,0
+2,2019,meaningless headers,name only,18,0,0,0,18,0
+2,2019,meaningless headers,stats only,18,17,0,0,1,2
+2,2019,meaningless headers,name + stats,18,17,0,0,1,2
+2,2019,meaningless headers,name + stats + invariants,18,17,0,0,1,0
+2,2023,named headers,name only,19,19,0,0,0,0
+2,2023,named headers,stats only,19,19,0,0,0,2
+2,2023,named headers,name + stats,19,19,0,0,0,0
+2,2023,named headers,name + stats + invariants,19,19,0,0,0,0
+2,2023,meaningless headers,name only,19,0,0,0,19,0
+2,2023,meaningless headers,stats only,19,19,0,0,0,2
+2,2023,meaningless headers,name + stats,19,19,0,0,0,2
+2,2023,meaningless headers,name + stats + invariants,19,19,0,0,0,0
+3,2009,named headers,name only,18,18,0,0,0,0
+3,2009,named headers,stats only,18,18,0,0,0,8
+3,2009,named headers,name + stats,18,18,0,0,0,0
+3,2009,named headers,name + stats + invariants,18,18,0,0,0,0
+3,2009,meaningless headers,name only,18,0,0,0,18,0
+3,2009,meaningless headers,stats only,18,18,0,0,0,8
+3,2009,meaningless headers,name + stats,18,18,0,0,0,8
+3,2009,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+3,2010,named headers,name only,18,18,0,0,0,0
+3,2010,named headers,stats only,18,18,0,0,0,6
+3,2010,named headers,name + stats,18,18,0,0,0,0
+3,2010,named headers,name + stats + invariants,18,18,0,0,0,0
+3,2010,meaningless headers,name only,18,0,0,0,18,0
+3,2010,meaningless headers,stats only,18,18,0,0,0,6
+3,2010,meaningless headers,name + stats,18,18,0,0,0,6
+3,2010,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+3,2015,named headers,name only,19,19,0,0,0,0
+3,2015,named headers,stats only,19,18,0,0,1,6
+3,2015,named headers,name + stats,19,19,0,0,0,0
+3,2015,named headers,name + stats + invariants,19,19,0,0,0,0
+3,2015,meaningless headers,name only,19,0,0,0,19,0
+3,2015,meaningless headers,stats only,19,18,0,0,1,6
+3,2015,meaningless headers,name + stats,19,18,0,0,1,6
+3,2015,meaningless headers,name + stats + invariants,19,18,0,0,1,4
+3,2017,named headers,name only,17,17,0,0,0,0
+3,2017,named headers,stats only,17,16,0,0,1,2
+3,2017,named headers,name + stats,17,17,0,0,0,0
+3,2017,named headers,name + stats + invariants,17,17,0,0,0,0
+3,2017,meaningless headers,name only,17,0,0,0,17,0
+3,2017,meaningless headers,stats only,17,16,0,0,1,2
+3,2017,meaningless headers,name + stats,17,16,0,0,1,2
+3,2017,meaningless headers,name + stats + invariants,17,16,0,0,1,0
+3,2019,named headers,name only,18,18,0,0,0,0
+3,2019,named headers,stats only,18,17,0,0,1,2
+3,2019,named headers,name + stats,18,18,0,0,0,0
+3,2019,named headers,name + stats + invariants,18,18,0,0,0,0
+3,2019,meaningless headers,name only,18,0,0,0,18,0
+3,2019,meaningless headers,stats only,18,17,0,0,1,2
+3,2019,meaningless headers,name + stats,18,17,0,0,1,2
+3,2019,meaningless headers,name + stats + invariants,18,17,0,0,1,0
+3,2023,named headers,name only,19,19,0,0,0,0
+3,2023,named headers,stats only,19,19,0,0,0,2
+3,2023,named headers,name + stats,19,19,0,0,0,0
+3,2023,named headers,name + stats + invariants,19,19,0,0,0,0
+3,2023,meaningless headers,name only,19,0,0,0,19,0
+3,2023,meaningless headers,stats only,19,19,0,0,0,2
+3,2023,meaningless headers,name + stats,19,19,0,0,0,2
+3,2023,meaningless headers,name + stats + invariants,19,19,0,0,0,0
+4,2009,named headers,name only,18,18,0,0,0,0
+4,2009,named headers,stats only,18,18,0,0,0,8
+4,2009,named headers,name + stats,18,18,0,0,0,0
+4,2009,named headers,name + stats + invariants,18,18,0,0,0,0
+4,2009,meaningless headers,name only,18,0,0,0,18,0
+4,2009,meaningless headers,stats only,18,18,0,0,0,8
+4,2009,meaningless headers,name + stats,18,18,0,0,0,8
+4,2009,meaningless headers,name + stats + invariants,18,18,0,0,0,6
+4,2010,named headers,name only,18,18,0,0,0,0
+4,2010,named headers,stats only,18,18,0,0,0,6
+4,2010,named headers,name + stats,18,18,0,0,0,0
+4,2010,named headers,name + stats + invariants,18,18,0,0,0,0
+4,2010,meaningless headers,name only,18,0,0,0,18,0
+4,2010,meaningless headers,stats only,18,18,0,0,0,6
+4,2010,meaningless headers,name + stats,18,18,0,0,0,6
+4,2010,meaningless headers,name + stats + invariants,18,18,0,0,0,4
+4,2015,named headers,name only,19,19,0,0,0,0
+4,2015,named headers,stats only,19,18,0,0,1,6
+4,2015,named headers,name + stats,19,19,0,0,0,0
+4,2015,named headers,name + stats + invariants,19,19,0,0,0,0
+4,2015,meaningless headers,name only,19,0,0,0,19,0
+4,2015,meaningless headers,stats only,19,18,0,0,1,6
+4,2015,meaningless headers,name + stats,19,18,0,0,1,6
+4,2015,meaningless headers,name + stats + invariants,19,18,0,0,1,4
+4,2017,named headers,name only,17,17,0,0,0,0
+4,2017,named headers,stats only,17,16,0,0,1,4
+4,2017,named headers,name + stats,17,17,0,0,0,0
+4,2017,named headers,name + stats + invariants,17,17,0,0,0,0
+4,2017,meaningless headers,name only,17,0,0,0,17,0
+4,2017,meaningless headers,stats only,17,16,0,0,1,4
+4,2017,meaningless headers,name + stats,17,16,0,0,1,4
+4,2017,meaningless headers,name + stats + invariants,17,16,0,0,1,2
+4,2019,named headers,name only,18,18,0,0,0,0
+4,2019,named headers,stats only,18,17,0,0,1,2
+4,2019,named headers,name + stats,18,18,0,0,0,0
+4,2019,named headers,name + stats + invariants,18,18,0,0,0,0
+4,2019,meaningless headers,name only,18,0,0,0,18,0
+4,2019,meaningless headers,stats only,18,17,0,0,1,2
+4,2019,meaningless headers,name + stats,18,17,0,0,1,2
+4,2019,meaningless headers,name + stats + invariants,18,17,0,0,1,0
+4,2023,named headers,name only,19,19,0,0,0,0
+4,2023,named headers,stats only,19,19,0,0,0,2
+4,2023,named headers,name + stats,19,19,0,0,0,0
+4,2023,named headers,name + stats + invariants,19,19,0,0,0,0
+4,2023,meaningless headers,name only,19,0,0,0,19,0
+4,2023,meaningless headers,stats only,19,19,0,0,0,2
+4,2023,meaningless headers,name + stats,19,19,0,0,0,2
+4,2023,meaningless headers,name + stats + invariants,19,19,0,0,0,0

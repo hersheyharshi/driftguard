@@ -1,0 +1,16 @@
+{
+  "seeds_e1_e2": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "seeds_e3": [
+    0,
+    1,
+    2
+  ],
+  "clean_batches": 160,
+  "false_alarms": 2
+}

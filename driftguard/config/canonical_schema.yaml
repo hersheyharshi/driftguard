@@ -1,0 +1,69 @@
+# DriftGuard canonical schema for NYC yellow-taxi trips.
+#
+# Every raw file, whatever era or vendor quirk it comes from, is mapped onto
+# these columns. `aliases` are known historical names (seeded from TLC files);
+# the registry ALSO matches columns it has never seen, using name similarity
+# plus statistical fingerprints, so this list does not have to be complete.
+
+version: 1
+
+columns:
+  vendor_id:             {required: false, aliases: [vendorid, vendor_name, vendor]}
+  pickup_ts:             {required: true,  aliases: [tpep_pickup_datetime, pickup_datetime, trip_pickup_datetime, lpep_pickup_datetime]}
+  dropoff_ts:            {required: true,  aliases: [tpep_dropoff_datetime, dropoff_datetime, trip_dropoff_datetime, lpep_dropoff_datetime]}
+  passenger_count:       {required: false, aliases: [passenger_count]}
+  trip_distance_mi:      {required: true,  aliases: [trip_distance], unit: mile}
+  pickup_lon:            {required: false, aliases: [pickup_longitude, start_lon]}
+  pickup_lat:            {required: false, aliases: [pickup_latitude, start_lat]}
+  dropoff_lon:           {required: false, aliases: [dropoff_longitude, end_lon]}
+  dropoff_lat:           {required: false, aliases: [dropoff_latitude, end_lat]}
+  pu_zone:               {required: false, aliases: [pulocationid, pickup_location_id]}
+  do_zone:               {required: false, aliases: [dolocationid, dropoff_location_id]}
+  rate_code:             {required: false, aliases: [ratecodeid, rate_code]}
+  store_and_fwd_flag:    {required: false, aliases: [store_and_forward, store_and_fwd_flag]}
+  payment_type:          {required: false, aliases: [payment_type]}
+  fare_amount:           {required: true,  aliases: [fare_amt], unit: usd}
+  extra:                 {required: false, aliases: [surcharge], unit: usd}
+  mta_tax:               {required: false, aliases: [mta_tax], unit: usd}
+  tip_amount:            {required: false, aliases: [tip_amt], unit: usd}
+  tolls_amount:          {required: false, aliases: [tolls_amt], unit: usd}
+  improvement_surcharge: {required: false, aliases: [improvement_surcharge], unit: usd}
+  congestion_surcharge:  {required: false, aliases: [congestion_surcharge], unit: usd}
+  airport_fee:           {required: false, aliases: [airport_fee], unit: usd}
+  total_amount:          {required: true,  aliases: [total_amt], unit: usd}
+
+# Columns that must add up to total_amount (used by the consistency invariant).
+total_components: [fare_amount, extra, mta_tax, tip_amount, tolls_amount,
+                   improvement_surcharge, congestion_surcharge, airport_fee]
+
+# Categorical vocabularies drift too (2009: "CASH", 2010: "CSH", 2015+: 2).
+# Keys are matched case-insensitively. Unknown values become "unknown" and are
+# reported as vocabulary drift.
+value_maps:
+  payment_type:
+    "1": card
+    "2": cash
+    "3": no_charge
+    "4": dispute
+    "5": unknown
+    "6": voided
+    credit: card
+    cre: card
+    crd: card
+    cash: cash
+    cas: cash
+    csh: cash
+    "no charge": no_charge
+    noc: no_charge
+    dispute: dispute
+    dis: dispute
+  vendor_id:
+    "1": cmt
+    "2": vts
+    cmt: cmt
+    vts: vts
+    dds: dds
+
+# Columns used to fingerprint rows for duplicate / replay detection.
+row_key: [pickup_ts, dropoff_ts, pu_zone, do_zone, pickup_lon, pickup_lat,
+          trip_distance_mi, fare_amount, total_amount]

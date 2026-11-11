@@ -1,0 +1,34 @@
+# Row-level data contracts. Each rule is a pandas expression over the
+# canonical (+ derived) columns that must evaluate to True for a valid row.
+#   severity: quarantine -> row moves to the quarantine table with the reason
+#   severity: tag        -> row is kept, the violation is counted
+# Derived columns available: duration_min, speed_mph, total_residual.
+
+rules:
+  - name: pickup_present
+    expr: "pickup_ts.notna()"
+    severity: quarantine
+  - name: dropoff_after_pickup
+    expr: "dropoff_ts > pickup_ts"
+    severity: quarantine
+  - name: duration_plausible
+    expr: "(duration_min >= 0.5) & (duration_min <= 360)"
+    severity: quarantine
+  - name: distance_plausible
+    expr: "(trip_distance_mi > 0) & (trip_distance_mi <= 200)"
+    severity: quarantine
+  - name: fare_non_negative
+    expr: "fare_amount >= 0"
+    severity: quarantine
+  - name: fare_plausible
+    expr: "fare_amount <= 1000"
+    severity: quarantine
+  - name: speed_plausible
+    expr: "speed_mph <= 80"
+    severity: quarantine
+  - name: passenger_count_valid
+    expr: "passenger_count.isna() | ((passenger_count >= 0) & (passenger_count <= 9))"
+    severity: quarantine
+  - name: total_consistent
+    expr: "total_residual.isna() | (total_residual.abs() <= 0.05)"
+    severity: tag
