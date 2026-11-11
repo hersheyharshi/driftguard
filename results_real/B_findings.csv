@@ -1,0 +1,7 @@
+check,severity,columns,statistic,threshold,cause,params,action,batch_id
+distribution_drift,warn,"[""tip_amount""]",0.05835714285714283,0.0746136392849553,no known cause matched; median ratio 0.903,"{""median_ratio"": 0.9027777777777778}",none,2023-04-01
+distribution_drift,warn,"[""airport_fee""]",0.08707142857142858,0.0692898377449537,no known cause matched,"{""median_ratio"": null}",none,2023-04-06
+distribution_drift,warn,"[""tip_amount""]",0.05554761904761907,0.0746136392849553,no known cause matched; median ratio 0.905,"{""median_ratio"": 0.9052631578947369}",none,2023-04-08
+distribution_drift,warn,"[""airport_fee""]",0.0856190476190477,0.0692898377449537,no known cause matched,"{""median_ratio"": null}",none,2023-04-09
+distribution_drift,warn,"[""airport_fee""]",0.08976190476190482,0.0692898377449537,no known cause matched,"{""median_ratio"": null}",none,2023-04-10
+distribution_drift,warn,"[""tip_amount""]",0.0602380952380952,0.0746136392849553,no known cause matched; median ratio 0.881,"{""median_ratio"": 0.8809523809523809}",none,2023-04-29

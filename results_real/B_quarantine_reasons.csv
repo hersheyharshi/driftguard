@@ -1,0 +1,7 @@
+reason,rows
+distance_plausible,24432
+duration_plausible,17932
+fare_non_negative,16354
+speed_plausible,1826
+dropoff_after_pickup,732
+fare_plausible,1

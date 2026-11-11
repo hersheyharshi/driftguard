@@ -1,0 +1,62 @@
+{
+  "selftest": false,
+  "study_months": [
+    "2023-03",
+    "2023-04"
+  ],
+  "era_months": [
+    "2009-06",
+    "2014-06",
+    "2018-06"
+  ],
+  "max_rows": 30000,
+  "warmup": 14,
+  "fault_every": 3,
+  "batches": 47,
+  "minutes": 0.9,
+  "month_files": {
+    "2023-03": {
+      "rows": 3403766,
+      "outside_month": 189,
+      "null_pickup": 0
+    },
+    "2023-04": {
+      "rows": 3288250,
+      "outside_month": 95,
+      "null_pickup": 0
+    }
+  },
+  "B_days_accepted_untouched": 1.0,
+  "B_days_with_alarm": 0.1276595744680851,
+  "B_rows_quarantined_share": 0.023980851063829786,
+  "C_faults": 13,
+  "C_detected": 1.0,
+  "C_cause_ok": 1.0,
+  "C_clean_day_alarm_rate": 0.09375,
+  "D": [
+    {
+      "pipeline": "oracle (clean run)",
+      "wape": 0.2300799139592408,
+      "mae": 1.0598447944357785,
+      "train_rows": 178080,
+      "test_rows": 76320,
+      "held_days": NaN
+    },
+    {
+      "pipeline": "DriftGuard",
+      "wape": 0.2466250084206549,
+      "mae": 1.136058454014443,
+      "train_rows": 171720,
+      "test_rows": 76320,
+      "held_days": 2.0
+    },
+    {
+      "pipeline": "naive",
+      "wape": 0.32261112784159035,
+      "mae": 1.486082459725435,
+      "train_rows": 178080,
+      "test_rows": 76320,
+      "held_days": NaN
+    }
+  ]
+}
